@@ -1,9 +1,8 @@
 def create_array
   (1..1000).to_a.shuffle
 end
-
+$x = Time.new
 def bubble_sort_recurssive(array)
-  $x = Time.new
   new_array = array
   swaps = 0
   first_number_in_pair = 0

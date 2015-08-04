@@ -14,16 +14,17 @@ def bubble_sort_iterative(array)
     end
     first_number_in_pair += 1
   end
-  if swaps > 0
+  if swaps == 0
+    puts new_array
     return true
   end
 end
 
 shuffled_array = create_array
-$sorted = false
+sorted = false
 x = Time.new
-until $sorted
-  $sorted = bubble_sort_iterative(shuffled_array)
+until sorted
+  sorted = bubble_sort_iterative(shuffled_array)
 end
 y = Time.new
 
